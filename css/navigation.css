@@ -1,0 +1,68 @@
+/* =========================================================
+   navigation.css — estados de foco para navegação D-Pad
+   ========================================================= */
+
+.focusable {
+    position: relative;
+    outline: none;
+    transition: transform 120ms ease, box-shadow 120ms ease,
+                background-color 120ms ease, border-color 120ms ease;
+}
+
+.focusable:focus {
+    z-index: 3;
+    box-shadow: 0 0 0 3px var(--accent), 0 16px 34px rgba(0, 0, 0, 0.5);
+}
+
+.list-item:focus,
+.chip:focus,
+.tab:focus,
+.episode:focus {
+    background: #17303a;
+    border-color: rgba(53, 214, 196, 0.5);
+}
+
+.list-item:focus .list-item-title,
+.episode:focus .episode-title {
+    color: #ffffff;
+}
+
+.list-channel:focus {
+    transform: scale(1.01);
+}
+
+.tile:focus {
+    transform: translateY(-6px) scale(1.02);
+    background: #16323c;
+    box-shadow: 0 0 0 3px var(--accent), 0 22px 44px rgba(0, 0, 0, 0.55);
+}
+
+.recent-card:focus {
+    box-shadow: 0 0 0 3px var(--accent), 0 18px 38px rgba(0, 0, 0, 0.55);
+}
+
+.poster-card:focus {
+    transform: scale(1.04);
+    box-shadow: 0 0 0 3px var(--accent), 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 3px var(--accent), 0 14px 30px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 3px #d6fbf6, 0 16px 34px rgba(47, 208, 190, 0.4);
+}
+
+.input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(53, 214, 196, 0.35);
+}
+
+.poster-card.is-current {
+    background: #16323c;
+}
+
+.poster-card.is-current .poster-title {
+    color: #ffffff;
+}

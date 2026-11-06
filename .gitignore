@@ -1,0 +1,11 @@
+# Credenciais locais do aparelho (logins dos provedores) - NÃO versionar
+js/config.local.js
+
+# Artefatos de build / deploy do Tizen Studio
+Debug/
+.tizen-rds/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
